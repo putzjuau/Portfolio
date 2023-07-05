@@ -1,0 +1,265 @@
+:root {
+    --verdeClaro: #35F22E;
+    -verdeMeioTermo: #2fd929;
+    --verdeEscuro: #24A61F;
+    --branco: #D9D9D9;
+    --preto: #0D0D0D;
+/* O TMAANHO PADRÃO DA FONTE/ROOT VEM 16PX*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+
+    font-size: 62.5%;
+    /*especifica o comportamento de rolagem para uma caixa de scrolling*/
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 59%
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    html {
+        font-size: 56%
+    }
+}
+
+@media only screen and (min-width: 112.5em) {
+    html {
+        font-size: 65%
+    }
+}
+
+.title {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+body {
+    background: var(--preta);
+    font-family: sans-serif;
+
+}
+
+ul {
+    /*em ê tamanho relativo ao tamanho da fonte do elemento*/
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--branco);
+
+    font-size: 30px;
+
+}
+.Mypic {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 250px;
+    border-radius: 2rem;
+}
+
+footer {
+    text-align: center;
+}
+
+
+.header {
+    background-image: linear-gradient(to right, var(--verdeEscuro), var(--preta));
+    box-shadow: 0 10px 100px rgba(0, 0, 0, .1);
+    /*Uma pequena borda em volta do header*/
+
+}
+
+
+
+
+
+.logo_img {
+    /*REM significa relativo a fonte do elemento root*/
+    width: 25px;
+    height: auto;
+    margin-top: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 1.2rem;
+}
+
+
+.nav-pills .nav-link.active {
+    background-color: #32CD32;
+
+}
+
+a {
+    color: var(--preto);
+}
+
+
+
+p {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, white;
+    font-size: 20px;
+    font-style: initial;
+}
+
+mark {
+    background-color: #32CD32;
+}
+
+/*Assim que passar o mouse em cima do botão, ele mudará de cor*/
+a:hover {
+    display: inline-block;
+    /*Acaba gerando um espaço entre os links*/
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--verdeEscuro);
+}
+
+.header__logo-sub {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header__logo-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    transition: color .3s;
+}
+
+.header__logo-container:hover {
+    color: var(--verdeEscuro);
+}
+
+.header__logo-img-cont {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 1.5rem;
+    background: #7843e9;
+}
+
+.header__content {
+    display: flex;
+    /*Adicionando ao centro tudo*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+    .header__content {
+        padding: 0 2rem;
+    }
+}
+
+.header_links_write {
+    background-image: linear-gradient(to left, var(--verdeEscuro), var(--preta));
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 3rem
+}
+
+.header_link {
+    font-weight: 700;
+    color: var(--preto);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.about_container {
+    /**/
+    background: linear-gradient(to left, rgb(42, 31, 85), rgb(32, 32, 36));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*propriedade a qual acaba abreviando column-gap, a qual definira a distância entre os containers*/
+    grid-gap: 10rem;
+}
+
+
+
+.footer-main {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.main-container {
+    max-width: 120rem; /*120x16px = 1920px*/
+    margin: auto; 
+    width: 92%; /*Pegando 92% do container*/
+}
+/*Responsável pela div/container que contém social e sobre*/
+.main-footer__upper {
+    display: flex; 
+    justify-content: space-between; /*Define o espaçamento lateral entre os itens*/
+    padding: 8rem 0;
+}
+
+
+.main-footer__social-cont {
+    margin-top: 2rem;/*32px a margin top*/
+}
+
+.main-footer__row-1 {
+    order: 2; /*Segunda ordem, apareça em segundo, logo após o sobre no final*/
+}
+
+.main-footer__icon--mr-none {
+    margin-right: 0
+}
+
+.footer_main-social-icon { /*Padronizando todas as imagens do footer*/
+    margin: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.skills_skills {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    background: rgba(153, 153, 153, .2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #666;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
