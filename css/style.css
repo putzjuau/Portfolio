@@ -257,12 +257,51 @@ a:hover {
 .about_container {
     /**/
 
-    background: linear-gradient(to LEFT, var(--verdeMeioTermo) , var( --verdeEscuro));
+    background: linear-gradient(to LEFT,rgb(42, 31, 85), rgb(32, 32, 36));
     display: grid;
     grid-template-columns: 1fr 1fr;
     /*propriedade a qual acaba abreviando column-gap, a qual definira a distância entre os containers*/
     grid-gap: 10rem;
 }
+
+.curriculum{
+    
+    background: linear-gradient(to left, var(--verdeEscuro), var(--preto));
+    text-align: center;
+ 
+   
+}
+
+.links_write {
+    
+    text-align: center;
+    color: var(--branco);
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+
+}
+
+.btn {
+    background: #fff;
+    color: var(--preto);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 900;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    transition: transform .3s;
+    margin-bottom: 2%;
+}
+/*Configuração de tamanho do botao*/
+.btn--bg {
+    padding: 1.5rem 8rem;
+    font-size: 2rem
+}
+
+
 
 
 
