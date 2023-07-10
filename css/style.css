@@ -1,10 +1,10 @@
 :root {
-    --verdeClaro: #35F22E;
-    -verdeMeioTermo: #2fd929;
-    --verdeEscuro: #24A61F;
+    --verdeClaro: #18D935;
+    --verdeMeioTermo: #15BF2F;
+    --verdeEscuro: #2DA63F;
     --branco: #D9D9D9;
     --preto: #0D0D0D;
-/* O TMAANHO PADRÃO DA FONTE/ROOT VEM 16PX*/
+/* O TAMANHO PADRÃO DA FONTE/ROOT VEM 16PX*/
 }
 
 * {
@@ -109,7 +109,6 @@ html {
 }
 
 body {
-    background: var(--preta);
     font-family: sans-serif;
 
 }
@@ -147,10 +146,8 @@ footer {
 
 
 .header {
-    background-image: linear-gradient(to right, var(--verdeEscuro), var(--preta));
-    box-shadow: 0 10px 100px rgba(0, 0, 0, .1);
+    box-shadow: 0 10px 100px rgba(0, 0, 0, .2);
     /*Uma pequena borda em volta do header*/
-
 }
 
 
@@ -180,15 +177,13 @@ a {
 
 
 p {
-    color: white;
+    color:var(--branco);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, white;
     font-size: 20px;
     font-style: initial;
 }
 
-mark {
-    background-color: #32CD32;
-}
+
 
 /*Assim que passar o mouse em cima do botão, ele mudará de cor*/
 a:hover {
@@ -196,7 +191,7 @@ a:hover {
     /*Acaba gerando um espaço entre os links*/
     letter-spacing: 1px;
     font-weight: 700;
-    color: var(--verdeEscuro);
+    color: var(--verdeMeioTermo);
 }
 
 .header__logo-sub {
@@ -238,7 +233,7 @@ a:hover {
 
 
 .header_links_write {
-    background-image: linear-gradient(to left, var(--verdeEscuro), var(--preta));
+   
     margin-top: 20px;
     text-align: center;
     color: white;
@@ -261,7 +256,8 @@ a:hover {
 
 .about_container {
     /**/
-    background: linear-gradient(to left, rgb(42, 31, 85), rgb(32, 32, 36));
+
+    background: linear-gradient(to LEFT, var(--verdeMeioTermo) , var( --verdeEscuro));
     display: grid;
     grid-template-columns: 1fr 1fr;
     /*propriedade a qual acaba abreviando column-gap, a qual definira a distância entre os containers*/
@@ -314,7 +310,7 @@ a:hover {
     background: rgba(153, 153, 153, .2);
     border-radius: 5px;
     font-weight: 600;
-    color: #666;
+    color: var(--branco);
 }
 
 .skills {
