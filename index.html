@@ -15,6 +15,7 @@
 
 
   <link rel="shortcut icon" href="Imagens/My pcitures/favicon-32x32.png" type="image/x-icon">
+
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css"> <!-- utilizando o boostrap -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -40,9 +41,6 @@
             <a class="nav-link  header_link " data-toggle="pill" href="#about">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link header_link " data-toggle="pill" href="#skills">SKILLS</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link header_link" data-toggle="pill" href="#curiculum">CURICULUM</a>
           </li>
           <li class="nav-item">
@@ -54,64 +52,69 @@
   </header>
 
   <!-- IMAGEM CENTRAL MINHA --->
-
-  <img class=" img-fluid mx-auto d-block Mypic" src="Imagens/My pcitures/Minha_pessoa.JPG" alt="João">
-
+  <div class="apresentation">
+    <div class="apresentation_content">
+      <div>
+        <h1 class="text_init">&nbsp;&nbsp;Olá, Eu sou o João </h1>
+      </div>
+      <div class="apresentation_info">
+        <p class="text_primary">
+          Desenvolvedor Back-end focado em desenvolvimento em java e Spring boot, com conhecimento nas habilidades
+          apresentadas abaixo
+        </p>
+      </div>
+    </div>
+  </div>
 
 
   <!--  CONTAINER ABOUT --->
   <div class="about_container">
 
-    <!--CONTAINER ABOUT MAIN-->
-    <div class="about_container-main tab-content ">
-      <div class="tab-pane container active" id="about">
-        <h1 class="header_links_write">Sobre</h1>
-        <br><br>
-        <p class="">&nbsp;&nbsp;Olá, muito prazer, sou o João Victor e tenho 20 anos. Sou cursado em
-          Técnico de
-          Informática pelo Instituto Federal do
-          Paraná(IFPR) - Campus Avançado de Goioerê, interior do Paraná, o qual é ofertado de forma integrada ao Ensino
-          Médio, e atualmente, curso Análise e Desenvolvimento de Sistemas pelo Instituto Federal do Paraná - Campus
-          Umuarama.
+    <div class="about_container-main tab-content">
+      <h2 class="header_links_write">Sobre</h2>
+      <div class="tab-pane active">
+        <p class="sobre">Olá, muito prazer, sou o João e tenho 20 anos. Sou cursado em Técnico de Informática pelo
+          Instituto Federal
+          do Paraná(IFPR) - Campus Avançado de Goioerê, interior do Paraná, o qual é ofertado de forma integrada ao
+          Ensino Médio, e atualmente, curso Análise e Desenvolvimento de Sistemas pelo Instituto Federal do Paraná -
+          Campus Umuarama.
 
           Conforme o tempo que estudei o meu primeiro curso, Técnico em Informática, vi diversas áreas, desenvolvi
-          alguns
-          conhecimentos e participei de projetos que me influenciaram a se apaixonar por Informática. O mais marcante
-          foi
-          o que comecei no final do meu 1° ano de curso, chamado "Imprimindo Honestidade", o qual tinha como objetivo
-          recolher da comunidade computadores ou componentes, testar tais componentes e, por fim, implementar dois
-          computadores do zero, reconstruindo todo seu gabinete com peças e componentes que, junto com duas impressoras
-          iriam ser disponibilizados de forma gratuita dentro da biblioteca do Instituto Federal de Goioerê, para que
-          assim, estudantes que precisassem imprimir trabalhos ou documentos teriam um computador de fácil acesso. E,
-          para
-          a manutenção das impressoras e dos computadores, era preciso que pagassem R$ 0,25 centavos, e dependia
-          simplesmente da honestidade da pessoa que usufruiu do computador e da impressão aceitar, ou não, pagar tal
-          preço. O projeto foi feito com 3 amigos de classe e um professor de informática, o qual merece ser mencionado,
-          pois, além de um grande amigo, foi meu orientador no trabalho de conclusão de curso - TCC, Alison Ribeiro.</p>
-      </div>
-
-      <div class="tab-pane container fade" id="curriculo">
-        <h1>curriculo</h1>
-      </div>
-      <div class="tab-pane container fade" id="contato">
-        <h2>Sobre</h2>
+          alguns conhecimentos e participei de projetos que me influenciaram a se apaixonar por Informática. O mais
+          marcante foi o que comecei no final do meu 1° ano de curso, chamado "Imprimindo Honestidade", o qual tinha
+          como objetivo recolher da comunidade computadores ou componentes, testar tais componentes e, por fim,
+          implementar dois computadores do zero, reconstruindo todo seu gabinete com peças e componentes que, junto
+          com duas impressoras iriam ser disponibilizados de forma gratuita dentro da biblioteca do Instituto Federal
+          de Goioerê, para que assim, estudantes que precisassem imprimir trabalhos ou documentos teriam um computador
+          de fácil acesso. E, para a manutenção das impressoras e dos computadores, era preciso que pagassem R$ 0,25
+          centavos, e dependia simplesmente da honestidade da pessoa que usufruiu do computador e da impressão
+          aceitar, ou não, pagar tal preço. O projeto foi feito com 3 amigos de classe e um professor de informática,
+          o qual merece ser mencionado, pois, além de um grande amigo, foi meu orientador no trabalho de conclusão de
+          curso - TCC, Alison Ribeiro.</p>
       </div>
     </div>
     <!--CONTAINER ABOUT SKILLS-->
+
+
+
     <div class="about_container-skills tab-content">
-      <div class="tab-pane active" id="skills">
+      <div class="tab-pane active">
         <h2 class="header_links_write">Skills</h2>
         <div class="skills">
           <div class="skills_skills">Java</div>
           <div class="skills_skills">GIT</div>
-          <div class="skills_skills">HTML5</div>
-          <div class="skills_skills">CSS3</div>
+          <div class="skills_skills">HTML</div>
+          <div class="skills_skills">CSS</div>
+          <div class="skills_skills">JavaScript</div>
         </div>
       </div>
-
     </div>
+   
   </div>
-  <div class="curriculum">
+
+
+
+  <div class="curriculum" id="curiculum">
     <h2 class="links_write">Curriculo:</h2>
     <br>
     <a href="curriculo/Curriculo - João Victor (1).pdf" target="_blank" class="btn btn--bg"> Curicculo João
