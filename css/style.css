@@ -155,9 +155,9 @@ ul {
 }
 
 .apresentation {
-    color:  var(--branco);
+    color: var(--branco);
     background: linear-gradient(to right, rgb(42, 31, 85), rgb(32, 32, 36));
-    
+
     background-attachment: fixed;
     background-size: contain;
     height: 100vh;
@@ -181,12 +181,14 @@ ul {
     margin: 3rem auto 0 auto;
     max-width: 80rem;
 }
-.text_primary{
+
+.text_primary {
     font-size: 2.2rem;
     text-align: center;
     width: 100%;
-   
+
 }
+
 header .logo {
     margin-left: 5px;
     color: var(--branco);
@@ -233,7 +235,7 @@ footer {
 }
 
 a {
-    color: var(--preto);
+    color: var(--branco);
 }
 
 
@@ -324,15 +326,17 @@ a:hover {
     color: var(--branco);
     font-weight: 800
 }
-.sobre{
+
+.sobre {
     color: var(--branco);
 }
+
 .about_container {
     /**/
     height: 80vh;
     min-height: 60rem;
     max-height: 100rem;
-   
+
     padding-top: 2rem;
     background: linear-gradient(to LEFT, rgb(42, 31, 85), rgb(32, 32, 36));
     display: grid;
@@ -413,12 +417,12 @@ a:hover {
 }
 
 .main-footer__row-1 {
-    order: 2;
+    order:2;
     /*Segunda ordem, apareça em segundo, logo após o sobre no final*/
 }
 
 .main-footer__icon--mr-none {
-    margin-right: 0
+    margin-right: 0;
 }
 
 .footer_main-social-icon {
@@ -426,6 +430,18 @@ a:hover {
     margin: 1rem;
     width: 2.5rem;
     height: 2.5rem;
+}
+
+.main-footer__row-2 {
+    width: 60%;
+    order: 1;
+    max-width: 50rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+    .main-footer__row-2 {
+        width: 100%;
+    }
 }
 
 .skills_skills {
@@ -444,3 +460,10 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
 }
+.main-footer__lower {
+    padding: 4rem 0;
+    border-top: 1px solid #444;
+    color: #eee;
+    font-size: 1rem;
+    text-align: left;
+    text-align: center; }
