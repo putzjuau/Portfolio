@@ -1,7 +1,7 @@
 :root {
     --verdeClaro: #18D935;
     --verdeMeioTermo: #15BF2F;
-    --verdeEscuro: #2DA63F;
+    --verdeEscuro: rgb(45, 166, 63);
     --branco: #D9D9D9;
     --preto: #0D0D0D;
     /* O TAMANHO PADRÃO DA FONTE/ROOT VEM 16PX*/
@@ -156,9 +156,7 @@ ul {
 
 .apresentation {
     color: var(--branco);
-    background: linear-gradient(to right, rgb(42, 31, 85), rgb(32, 32, 36));
-
-    background-attachment: fixed;
+    background: linear-gradient(to right, rgb(2, 85, 14), rgb(6, 6, 7));
     background-size: contain;
     height: 100vh;
     min-height: 80rem;
@@ -180,13 +178,6 @@ ul {
 .apresentation_info {
     margin: 3rem auto 0 auto;
     max-width: 80rem;
-}
-
-.text_primary {
-    font-size: 2.2rem;
-    text-align: center;
-    width: 100%;
-
 }
 
 header .logo {
@@ -234,12 +225,9 @@ footer {
 
 }
 
-a {
-    color: var(--branco);
+a{
+    text-decoration:none;
 }
-
-
-
 p {
     display: block;
     margin-block-start: 1em;
@@ -252,6 +240,7 @@ p {
 /*Assim que passar o mouse em cima do botão, ele mudará de cor*/
 a:hover {
     display: inline-block;
+    text-decoration: none;
     /*Acaba gerando um espaço entre os links*/
     letter-spacing: 1px;
     font-weight: 700;
@@ -260,6 +249,7 @@ a:hover {
 
 .header__logo-sub {
     font-size: 1.8rem;
+
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
@@ -327,6 +317,26 @@ a:hover {
     font-weight: 800
 }
 
+.text_primary {
+    font-size: 2.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+.icons {
+    padding: 5rem 5rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.icons__imgs {
+    width: 5rem;
+    height: 5rem;
+    overflow: auto;
+    margin-right: 3rem;
+}
+
 .sobre {
     color: var(--branco);
 }
@@ -344,6 +354,33 @@ a:hover {
     /*propriedade a qual acaba abreviando column-gap, a qual definira a distância entre os containers*/
     grid-gap: 10rem;
 }
+
+.img__princi {}
+
+.img--prin--config{
+    top:50%;
+    left: 50%;
+    position:static;
+}
+
+.skills {
+    margin-left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills_skills {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 2rem;
+    font-size: 1.6rem;
+    background: rgba(153, 153, 153, .2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: var(--branco);
+}
+
+
 
 .curriculum {
     padding-top: 5rem;
@@ -417,7 +454,7 @@ a:hover {
 }
 
 .main-footer__row-1 {
-    order:2;
+    order: 2;
     /*Segunda ordem, apareça em segundo, logo após o sobre no final*/
 }
 
@@ -444,26 +481,13 @@ a:hover {
     }
 }
 
-.skills_skills {
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
-    margin-right: 1.5rem;
-    font-size: 1.6rem;
-    background: rgba(153, 153, 153, .2);
-    border-radius: 5px;
-    font-weight: 600;
-    color: var(--branco);
-}
 
-.skills {
-    margin-left: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .main-footer__lower {
     padding: 4rem 0;
     border-top: 1px solid #444;
     color: #eee;
     font-size: 1rem;
     text-align: left;
-    text-align: center; }
+    text-align: center;
+}
