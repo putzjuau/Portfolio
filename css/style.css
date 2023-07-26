@@ -138,6 +138,7 @@ html {
 
 body {
     font-family: sans-serif;
+    
 
 }
 
@@ -163,7 +164,7 @@ ul {
     max-height: 120rem;
     position: relative;
     color: var(--branco);
-    box-shadow: 0 10px 100px rgba(0, 0, 0, .1);
+   
 }
 
 .apresentation_content {
@@ -288,13 +289,11 @@ a:hover {
 
 
 .header_links_write {
-
     margin-top: 20px;
     text-align: center;
     color: white;
-    font-size: 2.8rem;
+    font-size: 5rem;
     font-weight: 700;
-    font-size: 2.8rem;
     margin-bottom: 3rem
 }
 
@@ -337,28 +336,34 @@ a:hover {
     text-align: center;
     margin-right: 3rem;
 }
-
+.about_sobre{
+  
+    text-align: center;
+}
 .sobre {
+    padding-left: 10rem;
+    padding-right: 10rem;
     color: var(--branco);
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1.5px;
+    
+    font-size: 2rem;
 }
 
 .about_container {
     /**/
- 
+    background: linear-gradient(to right, rgb(2, 85, 14), rgb(6, 6, 7));
     height: 120vh;
     min-height: 60rem;
     max-height: 100rem;
-    background-image: ;
     padding-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     /*propriedade a qual acaba abreviando column-gap, a qual definira a distância entre os containers*/
-    grid-gap: 10rem;
+    grid-gap: 5rem;
     /*espaço entre as div*/
 }
 
- -webkit-filter: blur(15px);
-}
 
 .about_container-curriculo {
     text-align: center;
@@ -372,12 +377,14 @@ a:hover {
 }
 
 .img__princi {
+    padding: 2rem 2rem;
     text-align: center;
 }
 
 .img--prin--config {
-    margin-top: 10rem;
-    width: 50rem;
+    margin-top: 5rem;
+    width: 60rem;
+    border-radius:50%;
 
 
 
@@ -405,9 +412,9 @@ a:hover {
 .curriculum {
     padding-top: 5rem;
     height: 80vh;
-    background: linear-gradient(to left, var(--verdeEscuro), var(--preto));
-    text-align: center;
-    box-shadow: 0 10px 100px rgba(0, 0, 0, .2);
+    background: linear-gradient(to right, rgb(2, 85, 14), rgb(6, 6, 7));
+     text-align: center;
+   
 
 
 }
@@ -416,7 +423,6 @@ a:hover {
 
     text-align: center;
     color: var(--branco);
-    font-size: 2.8rem;
     font-weight: 700;
     font-size: 2.8rem;
     margin-bottom: 3rem;
