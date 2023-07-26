@@ -225,9 +225,10 @@ footer {
 
 }
 
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
 }
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -333,7 +334,7 @@ a:hover {
 .icons__imgs {
     width: 5rem;
     height: 5rem;
-    overflow: auto;
+    text-align: center;
     margin-right: 3rem;
 }
 
@@ -343,24 +344,43 @@ a:hover {
 
 .about_container {
     /**/
-    height: 80vh;
+ 
+    height: 120vh;
     min-height: 60rem;
     max-height: 100rem;
-
+    background-image: ;
     padding-top: 2rem;
-    background: linear-gradient(to LEFT, rgb(42, 31, 85), rgb(32, 32, 36));
     display: grid;
     grid-template-columns: 1fr 1fr;
     /*propriedade a qual acaba abreviando column-gap, a qual definira a distância entre os containers*/
     grid-gap: 10rem;
+    /*espaço entre as div*/
 }
 
-.img__princi {}
+ -webkit-filter: blur(15px);
+}
 
-.img--prin--config{
-    top:50%;
-    left: 50%;
-    position:static;
+.about_container-curriculo {
+    text-align: center;
+}
+
+.item1 {
+    /*Vamos procurar dentro do template grid a posição que queremos tal grid*/
+    grid-column-start: 1;
+    /*Deixando entre a Coluna 1 e a 3(resumindo, meio)*/
+    grid-column-end: 3;
+}
+
+.img__princi {
+    text-align: center;
+}
+
+.img--prin--config {
+    margin-top: 10rem;
+    width: 50rem;
+
+
+
 }
 
 .skills {
@@ -414,12 +434,15 @@ a:hover {
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .15);
     transition: transform .3s;
     margin-bottom: 2%;
+
 }
+
 
 /*Configuração de tamanho do botao*/
 .btn--bg {
     padding: 1rem 8rem;
-    font-size: 2rem
+    font-size: 2rem;
+
 }
 
 
