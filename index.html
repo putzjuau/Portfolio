@@ -19,23 +19,23 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css"> <!--to  utilizando o boostrap -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+ 
 
   <title class="title">João Victor | Back-end Developer</title>
 </head>
 
 <body>
-
   <!-- HEADER--->
   <header class="header">
 
     <div class="header__content">
       <!--CONTAINER PARTE DA FOTO E NOME LADO ESQUERDO-->
-      <a href="http://putzjuau.github.io/Portfolio/" target="blank">
+     
         <div class="header__logo-container">
           <img src="Imagens/My pcitures/pic_header.png" class="header__logo-img-cont ">
           <span class="header__logo-sub">João Victor</span>
         </div>
-      </a>
+      
 
       <div class=" d-lg-flex justify-content-end">
         <ul class="nav nav-pills">
@@ -50,14 +50,44 @@
           </li>
         </ul>
       </div>
+      <div class="header__main-ham-menu-cont">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
+          alt="hamburger menu" class="header__main-ham-menu">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg"
+          alt="hamburger menu close" class="header__main-ham-menu-close d-none">
+      </div>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./"> Home </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./#about"> About </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./#projects"> Projects </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./#contact"> Contact </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
   <!-- IMAGEM CENTRAL MINHA --->
   <div class="apresentation">
-    <div class="apresentation_content">
+    <div class="apresentation_content" id="home">
       <div>
-        <h1 class="text_init">&nbsp;&nbsp;Opa, Eu sou o João </h1>
+        <h1 class="text_init">&nbsp;&nbsp; Opa, Eu sou o João!
+        </h1>
       </div>
       <div class="apresentation_info">
         <p class="text_primary">
@@ -83,7 +113,7 @@
   <div class="about_container">
 
     <div class="about_container-main tab-content">
-      <h2 class="header_links_write">Sobre Mim</h2>
+      <h2 class="header_links_write" id="about">Sobre Mim</h2>
       <div class="about_sobre">
         <p class="sobre">Cursado em Técnico de Informática pelo
           Instituto Federal
@@ -122,20 +152,18 @@
 
 
 
-  <div class="curriculum" id="curiculum">
+  <div class="projetos" id="projects">
     <h2 class="links_write">Projetos</h2>
     <div class="project_01" 1>
 
     </div>
 
   </div>
-  <div class="contact">
 
-  </div>
 
 
   <footer>
-    <div class="footer-main">
+    <div class="footer-main" id="contato">
       <!--LINKS E IMAGENS PERFIS-->
       <div class="main-container">
         <div class="main-footer__upper">
@@ -185,6 +213,7 @@
         </div>
       </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

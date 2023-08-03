@@ -1,21 +1,111 @@
-@media screen and (max-width:700px) {
-   .header body {
+/*responsive html font-size*/
+@media only screen and (min-width: 1800px) {
+    /*1800*/
+
+    html {
+        font-size: 65%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    /*1200*/
+
+    html {
+        font-size: 59%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    /*900px*/
+
+    html {
+        font-size: 55%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    /*700px*/
+
+    html {
+        font-size: 40%;
+    }
+}
+
+
+@media only screen and (max-width:700px) {
+    header footer {
         display: flex;
         flex-direction: column;
     }
 }
 
-@media  screen and (max-width: 900px) {
-    .header body {
-       
+
+@media only screen and (max-width:500px) {
+    header {
         display: flex;
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 200px) {
-    .header body {
+@media only screen and (max-width: 37.5em) {
+    .header__sm-menu--active {
+        visibility: visible;
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    .header__main-ham-menu-cont {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    .header_link{
+        display:none
+    }
+}
+
+
+
+
+@media only screen and (max-width:900px) {
+    header footer {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .apresentation .about_container {
+
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10rem;
+
+    }
+}
+@media only screen and (max-width:900px) {
+    .sobre {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        letter-spacing: 0.5px;
+        font-size: 1.8rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .img--prin--config {
+        width: 100%;
+        display: block;
+        align-items: center;
+
+
+    }
+}@Media only screen and (max-width:500px){
+    .about_container{
+      
+        
     }
 }
