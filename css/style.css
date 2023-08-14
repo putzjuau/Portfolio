@@ -32,6 +32,7 @@ html {
 
 body {
     font-family: sans-serif;
+    font-family: 'Source Sans Pro',sans-serif
 
 
 }
@@ -277,7 +278,7 @@ header{
 }
 
 .text_init {
-    font-size: 6rem;
+    font-size: 5rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
