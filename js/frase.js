@@ -2,6 +2,7 @@
   function escreverTexto(elemento, texto, intervalo) {
     let textoAtual = '';
     let i = 0;
+    
     const escreverIntervalo = setInterval(() => {
       textoAtual += texto[i];
       elemento.innerHTML = textoAtual;
