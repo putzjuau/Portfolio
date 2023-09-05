@@ -1,26 +1,29 @@
-  // Função para simular o efeito de escrita
-  function escreverTexto(elemento, texto, intervalo) {
-    let textoAtual = '';
-    let i = 0;
-    
-    const escreverIntervalo = setInterval(() => {
-      textoAtual += texto[i];
-      elemento.innerHTML = textoAtual;
-      i++;
-      if (i >= texto.length) {
-        clearInterval(escreverIntervalo);
-      }
-    }, intervalo);
-  }
+// Função para simular o efeito de escrita
+function escreverTexto(elemento, texto) {
+  let textoAtual = "";
+  let i = 0;
 
-  // Obtendo o elemento onde o texto será escrito
 
-  // Texto que será escrito
-  const textoParaEscrever = 'Olá, mundo! Estou escrevendo texto com efeito.';
+  const escreverIntervalo = setInterval(() => {
+    textoAtual += texto[i];
+    elemento.innerText = textoAtual;
+    i++;
 
-  // Intervalo entre as letras (em milissegundos)
-  const intervaloEntreLetras = 100; // Pode ajustar conforme desejado
+    if (i >= texto.length) {
+      clearInterval(escreverIntervalo);
+    }
+  }, 100)
 
-  // Iniciar o efeito de escrita
-  escreverTexto(elementoTexto, textoParaEscrever, intervaloEntreLetras);
+}
+
+// Obtendo o elemento onde o texto será escrito
+
+// Texto que será escrito
+const textoParaEscrever = 'João Victor';
+
+
+const elementoTexto = document.querySelector(".text_init")
+
+// Iniciar o efeito de escrita
+escreverTexto(elementoTexto, textoParaEscrever);
 
