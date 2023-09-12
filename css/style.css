@@ -2,17 +2,23 @@
     --verdeClaro: #18D935;
     --verdeMeioTermo: #15BF2F;
     --verdeEscuro: rgb(45, 166, 63);
-    --branco: #D9D9D9;
     --preto: #0D0D0D;
+    --fonte-color: #D9D9D9;
+    --header-color: #050505;
+    --header-color-fonte: #333;
+
     /* O TAMANHO PADRÃO DA FONTE/ROOT VEM 16PX*/
 }
 
-:root[data-theme="escuro"] {
+:root[data-theme="claro"] {
     --verdeClaro: #18D935;
     --verdeMeioTermo: #15BF2F;
     --verdeEscuro: rgb(45, 166, 63);
-    --branco: #D9D9D9;
+    --fonte-color: #D9D9D9;
     --preto: #0D0D0D;
+    --fonte-color: #D9D9D9;
+    --header-color: #f7f6f6f1;
+    --header-color-fonte: #333;
     /* O TAMANHO PADRÃO DA FONTE/ROOT VEM 16PX*/
 }
 
@@ -41,13 +47,11 @@ html {
 
 body {
     font-family: sans-serif;
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
 }
 
 ul {
-    /*em ê tamanho relativo ao tamanho da fonte do elemento*/
-    display: block;
-    list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -56,29 +60,22 @@ ul {
     font-size: 14px;
 }
 
-.apresentation::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 140%;
-    background: url('https://i.pinimg.com/originals/43/1a/37/431a378a36245dd2be6e870355af17f1.jpg');
-    background-repeat: repeat-x;
-    opacity: 0.8;
-    z-index: -1; /* Coloca esta camada atrás dos filhos da classe .apresentacao */
-    pointer-events: none; /* Impede que esta camada capture eventos de mouse, para que os filhos recebam eventos normalmente */
-  }
-  
+.apresentation {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(10, 10, 10, 0.5)), url("https://i.pinimg.com/originals/43/1a/37/431a378a36245dd2be6e870355af17f1.jpg");
+
+}
+
 
 
 .apresentacao {
-    min-height: 80rem;
+    min-height: 70rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    position: relative;
+
 }
 
 .apresentation_content {
-    color: var(--branco);
+    color: var(--fonte-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,14 +94,6 @@ ul {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
-
-.logo {
-    margin-left: 5px;
-    color: var(--branco);
-
-    font-size: 30px;
-
 }
 
 .Mypic {
@@ -141,13 +130,11 @@ footer {
 
 .nav-pills .nav-link.active {
     background-color: #32CD32;
-
 }
 
 a {
     text-decoration: none;
     color: inherit;
-
 }
 
 p {
@@ -170,11 +157,9 @@ a:hover {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    z-index: 1000;
-    background: #000;
-    background: #fff;
+    background: var(--header-color);   
     box-shadow: 0 10px 100px rgba(0, 0, 0, .1);
 }
 
@@ -189,7 +174,7 @@ header {
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: #333;
+    color: var(--fonte-color);
     transition: color .3s;
 }
 
@@ -225,9 +210,9 @@ header {
     margin-bottom: 3rem
 }
 
-.header_link {
+.header_link{
     font-weight: 700;
-    color: var(--preto);
+    color: var(--fonte-color);
     text-transform: uppercase;
     letter-spacing: 1px;
     display: flex;
@@ -274,7 +259,9 @@ header {
     visibility: hidden;
     opacity: 0
 }
-
+a{
+    list-style-type: ;
+}
 
 
 .header__sm-menu-link a {
@@ -308,7 +295,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
-    color: var(--branco);
+    color: var(--fonte-color);
     font-weight: 800
 }
 
@@ -342,7 +329,7 @@ header {
 .sobre {
     padding-left: 10rem;
     padding-right: 10rem;
-    color: var(--branco);
+    color: var(--fonte-color);
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 1.0px;
 
@@ -383,6 +370,7 @@ header {
     border-bottom: rgb(120, 67, 233, 0.5);
     border-style: groove;
     border-color: rgba(14, 247, 65, 0.3);
+    border-bottom-color:transparent;
 }
 
 .about_container-img {
@@ -405,7 +393,7 @@ header {
     background: rgba(153, 153, 153, .2);
     border-radius: 5px;
     font-weight: 600;
-    color: var(--branco);
+    color: var(--fonte-color);
 }
 
 
@@ -423,7 +411,7 @@ header {
 .links_write {
 
     text-align: center;
-    color: var(--branco);
+    color: var(--fonte-color);
     font-weight: 700;
     font-size: 2.8rem;
     margin-bottom: 3rem;
@@ -458,7 +446,7 @@ header {
 
 .footer-main {
     background-color: var(--preto);
-    color: var(--branco);
+    color: var(--fonte-color);
 }
 
 .main-container {
