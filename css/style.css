@@ -4,8 +4,9 @@
     --verdeEscuro: rgb(45, 166, 63);
     --preto: #0D0D0D;
     --fonte-color: #D9D9D9;
-    --header-color: #050505;
+    --header-color: linear-gradient(rgba(0, 0, 0, 0.9), rgba(10, 10, 10, 0.9)), #050505;
     --header-color-fonte: #333;
+    --back-about: linear-gradient(rgba(0, 0, 0, 0.5), rgba(10, 10, 10, 0.9)), rgba(28, 28, 28, 255);
 
     /* O TAMANHO PADRÃO DA FONTE/ROOT VEM 16PX*/
 }
@@ -61,11 +62,11 @@ ul {
 }
 
 .apresentation {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(10, 10, 10, 0.5)), url("https://i.pinimg.com/originals/43/1a/37/431a378a36245dd2be6e870355af17f1.jpg");
+    /**/
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(10, 10, 10, 0.9)), url("https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 
+    /* Define a transição suave de 1 segundo para o background */
 }
-
-
 
 .apresentacao {
     min-height: 70rem;
@@ -159,7 +160,7 @@ a:hover {
 header {
     position: absolute;
     width: 100%;
-    background: var(--header-color);   
+    background: var(--header-color);
     box-shadow: 0 10px 100px rgba(0, 0, 0, .1);
 }
 
@@ -178,17 +179,31 @@ header {
     transition: color .3s;
 }
 
+.header__logo-container:hover .header__logo-img-cont {
+    background-color: green;
+    transition: 0.1s ;
+}
+
 .header__logo-container:hover {
     color: var(--verdeEscuro);
 }
+.header__logo-img-cont {
+    background-color:green;
+    transition: 2s ease-in-out;
+}
+.header__logo-img-cont.transparent-bg {
+    background-color: transparent;
+    transition: 2s ease-in-out;
+}
+
 
 .header__logo-img-cont {
+
     width: 5rem;
     height: 5rem;
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
-    background: #7843e9;
 }
 
 .header__content {
@@ -210,7 +225,7 @@ header {
     margin-bottom: 3rem
 }
 
-.header_link{
+.header_link {
     font-weight: 700;
     color: var(--fonte-color);
     text-transform: uppercase;
@@ -259,7 +274,8 @@ header {
     visibility: hidden;
     opacity: 0
 }
-a{
+
+a {
     list-style-type: ;
 }
 
@@ -338,8 +354,7 @@ a{
 
 .about_container {
     /**/
-    background: linear-gradient(to right, rgb(2, 85, 14), rgb(6, 6, 7));
-    height: 160vh;
+    background: var(--back-about);
     min-height: 60rem;
     max-height: 100rem;
     padding-top: 2rem;
@@ -370,7 +385,7 @@ a{
     border-bottom: rgb(120, 67, 233, 0.5);
     border-style: groove;
     border-color: rgba(14, 247, 65, 0.3);
-    border-bottom-color:transparent;
+    border-bottom-color: transparent;
 }
 
 .about_container-img {
