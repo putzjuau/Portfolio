@@ -100,7 +100,7 @@ ul {
 .Mypic {
     margin-left: 5rem;
     margin-bottom: 4rem;
-    width: 100%;
+    width: 70%;
     border-radius: 2rem;
 }
 
@@ -181,16 +181,18 @@ header {
 
 .header__logo-container:hover .header__logo-img-cont {
     background-color: green;
-    transition: 0.1s ;
+    transition: 0.1s;
 }
 
 .header__logo-container:hover {
     color: var(--verdeEscuro);
 }
+
 .header__logo-img-cont {
-    background-color:green;
+    background-color: green;
     transition: 2s ease-in-out;
 }
+
 .header__logo-img-cont.transparent-bg {
     background-color: transparent;
     transition: 2s ease-in-out;
@@ -315,6 +317,12 @@ a {
     font-weight: 800
 }
 
+.text_primary_stack {
+    font-Style: oblique;
+    color: green;
+    font-family: fantasy;
+}
+
 .text_primary {
     font-size: 2.2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -323,7 +331,7 @@ a {
 }
 
 .icons {
-    padding: 5rem 5rem;
+    padding: 1.5rem 3rem;
     margin-right: 2rem;
     text-align: center;
 }
@@ -377,23 +385,30 @@ a {
     grid-column-end: 3;
 }
 
-
 .img--prin--config {
     margin-top: 5rem;
     width: 45rem;
     border-radius: 50%;
-    border-bottom: rgb(120, 67, 233, 0.5);
     border-style: groove;
     border-color: rgba(14, 247, 65, 0.3);
     border-bottom-color: transparent;
+    transition: 0.5s;
 }
 
+.img--prin--config.border-img { 
+    border-color: transparent;
+    transition: 2s ease-in-out;
+}
 .about_container-img {
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
 }
+.text_primary_stack{
+    font-style: oblique;
+    font-family: fantasy;
 
+}
 .skills {
     margin-left: 2rem;
     display: flex;

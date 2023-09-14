@@ -4,8 +4,6 @@ const textoParaEscrever = 'João Victor';
 const elementoTexto = document.querySelector(".text_init")
 const elementoTextoSegundario = document.querySelector(".text_primary_stack");
 
-elementoTextoSegundario.style.fontStyle = 'oblique';
-elementoTextoSegundario.style.color = 'green';
 
 function escreverTexto(elemento, texto) {
   let textoAtual = "";
@@ -38,13 +36,13 @@ escreverTexto(elementoTexto, textoParaEscrever);
 
 function escreverTextoStack(elemento){
   let textoAtual = "";
-  const stacks = ['Back-End', 'Full Stack'];
+  const stacks = ['Back-End  ', 'Full Stack  ' ];
   i = 0;
   j = 0;
 
-  const escreverIntervalo = setInterval(() => { //Escrevendo com um intervalo menor
+   setInterval(() => { //Escrevendo com um intervalo menor
     textoAtual += stacks[j][i];
-    elemento.innerText = textoAtual;
+    elemento.innerText = textoAtual ;
     i++;
 
     if (i >= stacks[j].length) {

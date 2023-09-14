@@ -30,6 +30,7 @@ footerLink.addEventListener('click', () => {
   location.href = 'https://putzjuau.github.io/Portfolio/'
 })
 
+
 const imgHeader = document.querySelector(".header__logo-img-cont");
 function themePhotografy() {
   setTimeout(() => {
@@ -44,7 +45,17 @@ function themePhotografy() {
 setInterval(themePhotografy, 10000);
 
 
-
+const borderPic = document.querySelector(".img--prin--config");
+function otherBorder(){
+  setTimeout(() => {
+    if(borderPic.classList.contains("border-img")){
+      borderPic.classList.remove("border-img");
+    }else{
+      borderPic.classList.add("border-img");
+    }
+  }, 1000);
+}
+setInterval(otherBorder, 10000);
 
 
 //mudanca de tema da pagina
