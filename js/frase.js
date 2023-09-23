@@ -36,9 +36,9 @@ escreverTexto(elementoTexto, textoParaEscrever);
 
 function escreverTextoStack(elemento){
   let textoAtual = "";
-  const stacks = ['Back-End  ', 'Full Stack  ' ];
-  i = 0;
-  j = 0;
+  const stacks = ['Full Stack  ', 'Front-End  ','Back-End  ' ];
+  let i = 0;
+  let j = 0;
 
    setInterval(() => { //Escrevendo com um intervalo menor
     textoAtual += stacks[j][i];

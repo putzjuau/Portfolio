@@ -50,6 +50,7 @@ body {
     font-family: sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     background-color: white;
+    background: var(--preto);
 }
 
 ul {
@@ -351,8 +352,8 @@ a {
 }
 
 .sobre {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     color: var(--fonte-color);
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 1.0px;
@@ -362,7 +363,6 @@ a {
 
 .about_container {
     /**/
-    background: var(--back-about);
     min-height: 60rem;
     max-height: 100rem;
     padding-top: 2rem;
@@ -370,6 +370,7 @@ a {
     grid-template-columns: 1fr 1fr;
     /*propriedade a qual acaba abreviando column-gap, a qual definira a distância entre os containers*/
     grid-gap: 5rem;
+    padding-bottom: 10rem; 
     /*espaço entre as div*/
 }
 
@@ -431,11 +432,7 @@ a {
 .projetos {
     padding-top: 10rem;
     height: 100vh;
-    background: linear-gradient(to right, rgb(2, 85, 14), rgb(6, 6, 7));
     text-align: center;
-
-
-
 }
 
 .links_write {
